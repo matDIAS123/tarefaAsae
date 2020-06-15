@@ -8,10 +8,14 @@ use App\usuario;
 class UsuariosController extends Controller
 {
     function nomesUsuarios(){
+        if (session()->has("login")) {
+        
     	$usuarios = Usuario::all();
 
     return view("lista", ["usuarios" => $usuarios]);
 }
+    return view("acesso_nao_permitido");
+    }
 
 function telaAlteracao($id){
 

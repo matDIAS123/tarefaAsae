@@ -4,10 +4,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	
-	<h1>Login</h1>
+	<h1 class="mt-4">Login</h1>
 
 	
-	<form method="post" action="{{ route('login') }}">
+	<form method="post" action="{{ route('tela_login') }}">
 		@csrf
 		
   	<style type="text/css">

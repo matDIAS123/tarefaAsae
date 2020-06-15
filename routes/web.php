@@ -20,13 +20,19 @@ Route::post('/usuario/alterar/{id}', 'UsuariosController@alterar')->name('usuari
 
 Route::get('/usuario/excluir/{id}', 'UsuariosController@excluir')->name('usuario_excluir');
 
+
+
 Route::get('/tela_login', 'AppController@telaLogin')->name('tela_login');
 
-Route::post('/login', 'AppController@login')->name('login');
+Route::post('/tela_login', 'AppController@login')->name('login');
+
+Route::get('/logout', 'AppController@logout')->name('logout');
 
 Route::post('/cadastrar', 'AppController@cadastrar')->name('cadastrar');
 
 Route::post('/relogar', 'UsuariosController@relogar')->name('relogar');
+
+
 
 /*vendas*/
 

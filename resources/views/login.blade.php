@@ -7,7 +7,7 @@
 	<h1>Login</h1>
 
 	
-	<form method="post" action="{{ route('login') }}">
+	<form method="post" action="{{ route('tela_login') }}">
 		@csrf
 		
   	<style type="text/css">

@@ -13,7 +13,7 @@
 
 <table class="table table-striped" >
   <thead>
-    <th>Lista de usuários</th>
+    <th class="mt-4">Lista de usuários</th>
           <th></th>
           <th></th>
           <th></th>
@@ -46,11 +46,11 @@
 <a class="btn btn-primary" href="{{ route('usuario_cadastrar')}}">Cadastrar novo</a>
 
 <script>
-  function exclui(id){
-    if (confirm('Deseja excluir: ' + id + '?')){
-      //processo para excluir
-      location.href = '/usuario/excluir/' + id;
+function exclui(id){
+    if (confirm("Deseja excluir o usuario de id: " + id + "?")){
+      location.href = "/usuario/excluir/" + id;
     }
-  }
+    }
+  
 </script>
 @endsection

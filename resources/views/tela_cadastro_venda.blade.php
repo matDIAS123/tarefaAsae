@@ -8,7 +8,7 @@
 
 
 
-  <h1>Venda</h1>
+  <h1>Cadastro de venda</h1>
 
 	<form method="post" action="{{ route('venda_add') }}">
 		@csrf
@@ -26,12 +26,9 @@
 
      @endforeach
     </select>
-  		<div class="form-group mx-sm-3 mb-2">
-   			<label class="sr-only">Valor</label>
-   			<input type="number" step="0.01 " class="form-control" placeholder="Valor" name="valor">
-  		</div>
-
+  		
 	<button type="submit" name="Enviar"  class="btn btn-primary">Cadastrar</button>
+
 
 	</form>
 

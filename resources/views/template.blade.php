@@ -113,28 +113,35 @@
       <li class="nav-item active">
         <a class="nav-link" href="/tela_login">Login<span class="sr-only">(current)</span></a>
       </li>
+
        <ul class="navbar-nav">
+
       <li class="nav-item active">
         <a class="nav-link" href=" {{ route('logout') }}">Logout<span class="sr-only">(current)</span></a>
       </li>
-            <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Cadastrar
-        </a>
+
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cadastrar</a>
+
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="/usuarios/cadastro">Cadastrar prospects</a>
-            <a class="dropdown-item" href="/venda/cadastro">Cadastrar venda</a>
+        <a class="dropdown-item" href="/usuarios/cadastro">Cadastrar prospects</a>
+        <a class="dropdown-item" href="/venda/cadastro">Cadastrar venda</a>
         </div>
 
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Usuarios
-        </a>
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usuarios </a>
+
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="/usuarios">Listar cadastrados</a>
+          <a class="dropdown-item" href="#">Produtos</a>
+          <a class="dropdown-item" href="/usuarios">Cadastrados</a>
         </div>
       </li>
-    </ul>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ route('venda_listar') }}">Vendas</a>
+      </li>
+  
+  </ul>
   </div>
 </nav>
 	</div>

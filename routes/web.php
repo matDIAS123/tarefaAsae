@@ -35,9 +35,17 @@ Route::post('/relogar', 'UsuariosController@relogar')->name('relogar');
 
 
 /*vendas*/
+Route::get('/venda/listar', 'VendaController@listar')->name('venda_listar');
 
 Route::get('/venda/cadastro', 'VendaController@telaCadastro')->name('venda_cadastro');
 
 Route::post('/venda/adicionar', 'VendaController@adicionar')->name('venda_add');
 
 Route::get('/venda/usuario/{id}', 'VendaController@vendasPorUsuario')->name('vendas_usuario');
+Route::get('/venda/{id}/itens', 'VendaController@itensVenda')->name('vendas_itens');
+
+Route::get('/venda/{id}/itens/novo', 'VendaController@telaAdicionarItem')->name('vendas_item_novo');
+
+Route::post('/venda/{id}/itens/adicionar', 'VendaController@adicionarItem')->name('vendas_item_add');
+
+Route::get('/venda/{id}/itens/remover/{id_produto}', 'VendaController@excluirItem')->name('vendas_item_delete');

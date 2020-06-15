@@ -10,6 +10,9 @@ class Venda extends Model
     protected $primaryKey = 'id';
 
     function usuario(){
-    	return $this->belongsTo('App\Usuario', 'id_usuario');
+    	return $this->belongsTo('App\Usuario', 'id_usuario', 'id');
+    }
+    function produtos(){
+    	return $this->belongsToMany('App\produto', 'produtos_vendas', 'id_venda', 'id_produto')->withPivot(['id','quantidade', 'subtotal'])-> withTimestamps();
     }
 }

@@ -72,7 +72,19 @@
               float: left;
 
             }
-            
+            footer{
+
+                position: fixed;
+               bottom:0;
+              left:0;
+          
+              padding-left: 40%;  
+           border-radius: 2px;
+            font-family: 'Nunito', sans-serif;
+             color: #191970;
+ 
+
+              }
        </style>
 
 
@@ -92,7 +104,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<nav class="navbar navbar-expand-lg navbar-danger bg-Light w-100">
-  <a class="navbar-brand" href="#">Prospects</a>
+  <a class="navbar-brand" href="#" >Prospects</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -101,9 +113,13 @@
       <li class="nav-item active">
         <a class="nav-link" href="/tela_login">Login<span class="sr-only">(current)</span></a>
       </li>
+       <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href=" {{ route('logout') }}">Logout<span class="sr-only">(current)</span></a>
+      </li>
             <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Tipos de cadastro
+          Cadastrar
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="/usuarios/cadastro">Cadastrar prospects</a>
@@ -134,5 +150,15 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<div id="wrapper">
+  <div class="container body-content">
+    
+  </div>
+  <footer id="rodape">
+    <p>@2020 Todos os direitos reservados - Prospects</p>
+  </footer>
+</div>
+
 </body>
 </html>
